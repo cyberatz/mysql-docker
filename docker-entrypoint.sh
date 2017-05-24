@@ -37,7 +37,7 @@ if [ "$1" = 'mysqld' ]; then
 		"$@" --initialize-insecure=on
 		echo 'Database initialized'
 
-		"$@" --skip-networking --socket=/var/run/mysqld/mysqld.sock &
+		"$@" --skip-networking=0 --socket=/var/run/mysqld/mysqld.sock &
 		pid="$!"
 
 		mysql=( mysql --protocol=socket -uroot -hlocalhost --socket=/var/run/mysqld/mysqld.sock)
