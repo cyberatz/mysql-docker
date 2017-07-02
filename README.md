@@ -1,5 +1,11 @@
 ![logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
 
+Run command: 
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=pass1234 -e MYSQL_DATABASE=BDM_Direct -e MYSQL_ROOT_HOST=10.0.0.173 -v /data/sql:/var/lib/mysql -p 3306:3306 andrevs/mysql &
+
+TODO:
+- check that we have space on drive 
+
 # What is MySQL?
 
 MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites, via online shops and information services, all the way to high profile web properties including Facebook, Twitter, YouTube, Yahoo! and many more.
