@@ -1,7 +1,7 @@
 ![logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
 
 Run command: 
-docker run --name mysql -e MYSQL_ROOT_PASSWORD=pass1234 -e MYSQL_DATABASE=BDM_Direct -e MYSQL_ROOT_HOST=10.0.0.173 -v /data/sql:/var/lib/mysql -p 3306:3306 andrevs/mysql &
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=pass1234 -e MYSQL_DATABASE=BDM_Direct -e MYSQL_ROOT_HOST=% -v /data/sql:/var/lib/mysql -p 3306:3306 andrevs/mysql &
 
 TODO:
 - check that we have space on drive 
